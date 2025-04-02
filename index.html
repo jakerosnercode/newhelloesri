@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>ArcGIS Maps SDK for JavaScript Tutorials: Display a map</title>
+
+    <style>
+      html,
+      body,
+      arcgis-map {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <script>
+      var esriConfig = {
+        apiKey: "AAPTxy8BH1VEsoebNVZXo8HurEMEVQbKvAbZnpzPKZRxuMNtUzDq8ag3E3FbEUVJMU0hrtmVGRJepK1vokNRd6QHYHvJ59WIxIBvBCEs9cPVdWnD4aXedEaWZSNwNzqqh5gyGL2CcmseyfeF5Gt8e3Mi7KdSA7BcKz3dTA6_yKBu_g1SbTFM-Zp9MUafCKP5vn2qhGgQBFLx91QEhf6EinAD207CcjqmQhLAFQ4sF6MsT9U.AT1_xORu7DFJ"
+      };
+    </script>
+
+    <!-- Load Calcite components from CDN -->
+    <script type="module" src="https://js.arcgis.com/calcite-components/3.0.3/calcite.esm.js"></script>
+
+    <!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.32/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.32/"></script>
+
+    <!-- Load Map components from CDN-->
+    <script
+      type="module"
+      src="https://js.arcgis.com/map-components/4.32/arcgis-map-components.esm.js"
+    ></script>
+
+  </head>
+
+  <body>
+
+    <arcgis-map basemap="arcgis/topographic" center="-118.805, 34.027" zoom="13">
+
+      <arcgis-zoom position="top-left"></arcgis-zoom>
+
+    </arcgis-map>
+
+  </body>
+
+</html>
